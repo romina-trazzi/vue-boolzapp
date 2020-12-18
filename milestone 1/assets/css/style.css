@@ -1,0 +1,61 @@
+/* Boolzapp - a (not very) innovative messagingplatform
+Milestone 1
+Replica della grafica ​
+con la possibilità di avere messaggi scritti dall’utente (verdi) 
+e dall’interlocutore (bianco) assegnando due classi CSS diverse */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(219, 219, 210);
+    overflow-y: hidden;
+}
+
+/* Classi utility */
+
+.d_flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* End classi utility */
+
+
+#marine {
+    height: 130px;
+    background-color: rgb(0, 150, 138);
+}
+
+.container {
+    width: 1430px;
+    height: 850px;
+    position: relative;
+    top: -100px;
+    
+}
+.container::after {
+    content: "";
+    display: table;
+    clear: both;
+
+}
+
+#sx {
+    width: 40%;
+    height: 100%;
+    background-color: white;
+    float: left;
+}
+    
+#dx {
+    width: 60%;
+    height: 100%;
+    background-image: url("../img/mine.jpg");
+    float: right;
+}
+
