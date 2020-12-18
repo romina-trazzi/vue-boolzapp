@@ -26,15 +26,27 @@
         </header>
 
         <main>
-            <div id = "app" class = "d_flex"> 
+            <div id = "app" class = "d_flex-center"> 
                 <div class="container">
                     
-                    <!-- sezione utenti sx -->
+                    <!-- sezione user sx -->
                     <section id = "sx">
+                        
+                        <!-- div username -->
+                        <div class="userName grey ">
+                            <div class="nomeUtente d_flex-start">
+                                <img src ="assets/img/avatar_io.jpg" class ="io" alt ="img_io">
+                                <span id ="me">Nome Utente</span>
+                            </div>
 
-                        <div class="userName grey">
+                            <div class="iconeMessaggi d_flex-spacearound">
+                                <i class="fas fa-circle-notch"></i>
+                                <i class="fas fa-comment-alt"></i>
+                                <i class="fas fa-ellipsis-v"></i>
+                            </div>
 
                         </div>
+                        <!-- / div username -->
                         
                         <div class="news"></div>
 
@@ -79,3 +91,4 @@
         <!-- / JS + Vue development version, includes helpful console warnings -->
     </body>
 </html>
+

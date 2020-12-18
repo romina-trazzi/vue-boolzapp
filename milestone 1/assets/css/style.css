@@ -12,7 +12,7 @@ e dall’interlocutore (bianco) assegnando due classi CSS diverse */
 
 body {
     background-color: rgb(219, 219, 210);
-    overflow-y: auto;
+    overflow-y: hidden;
 }
 
 #marine {
@@ -49,9 +49,21 @@ body {
 
 /* Classi utility */
 
-.d_flex {
+.d_flex-start {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.d_flex-center {
     display: flex;
     justify-content: center;
+    align-items: center;
+}
+
+.d_flex-spacearound {
+    display: flex;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -59,38 +71,103 @@ body {
     background-color: rgb(234, 234, 234);
 }
 
-/* End classi utility */
+/* end classi utility */
 
 
-/* sezioni chat dx */
+
+/*=============================================
+    =           Sezioni UTENTI DX          =
+=============================================*/
 
 .userName {
-    height: 13%;
-    background-color: red;
+    height: 12%;
+    border-right: 1px solid rgb(214,214,214);
 }
 
 .news {
     height: 15%;
-    background-color: orange;
+    background-color: rgb(142, 218, 252);
 }
 
 .search {
     height: 12%;
-    background-color: yellow;
+    background-color: rgb(250, 250, 250);
 }
 
 .contacts {
-    height: 60%;
-    background-color: green;
+    height: 61%;
+    background-color: white;
 }
 
+/*=====  End of Sezioni UTENTI DX  ======*/
 
 
 
-/* sezioni chat sx */
+/*=====================================================
+=            Sezioni userName (utenti dx)            =
+======================================================*/
+
+/* sotto-sottosezione nomeUtente userName utenti dx */
+
+.userName::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.nomeUtente {
+    height: 100%;
+    width: 65%;
+    float: left;
+}
+
+.io {
+    height: 70%;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+#me {
+    font-size: 24px;
+    font-family: "Tahoma", "Geneva", "Verdana", "sans-serif";
+}
+
+/* end sotto-sottosezione nomeUtente userName utenti dx */
+
+
+/* sotto-sottosezione iconeMessaggi userName utenti dx */
+
+.iconeMessaggi {
+    height: 100%;
+    width: 35%;
+    float: left;
+}
+
+.iconeMessaggi i {
+    color: rgb(177, 177, 177);
+    font-size: 2em;
+
+}
+
+/* end sotto-sottosezione iconeMessaggi userName utenti dx */
+
+
+
+
+
+/*=====  End of Sezioni userName (utenti dx)  ======*/
+
+
+
+
+
+
+/*=============================================
+    =           Sezioni CHAT SX          =
+=============================================*/
 
 .activeUser {
-   height: 13%;
+   height: 12%;
 }
 
 .activeChat {
@@ -98,9 +175,8 @@ body {
     background-image: url("../img/mine.jpg");
 }
 
-
 .activeFooter {
-    height: 12%; 
+    height: 13%; 
 }
 
-/* end sezioni chat sx */
+/*=====  End of Sezioni CHAT SX  ======*/
