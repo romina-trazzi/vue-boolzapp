@@ -12,19 +12,8 @@ e dall’interlocutore (bianco) assegnando due classi CSS diverse */
 
 body {
     background-color: rgb(219, 219, 210);
-    overflow-y: hidden;
+    overflow-y: auto;
 }
-
-/* Classi utility */
-
-.d_flex {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/* End classi utility */
-
 
 #marine {
     height: 130px;
@@ -36,13 +25,13 @@ body {
     height: 850px;
     position: relative;
     top: -100px;
-    
+
 }
+
 .container::after {
     content: "";
     display: table;
     clear: both;
-
 }
 
 #sx {
@@ -51,11 +40,67 @@ body {
     background-color: white;
     float: left;
 }
-    
+
 #dx {
     width: 60%;
     height: 100%;
-    background-image: url("../img/mine.jpg");
-    float: right;
+    float: left;
 }
 
+/* Classi utility */
+
+.d_flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grey {
+    background-color: rgb(234, 234, 234);
+}
+
+/* End classi utility */
+
+
+/* sezioni chat dx */
+
+.userName {
+    height: 13%;
+    background-color: red;
+}
+
+.news {
+    height: 15%;
+    background-color: orange;
+}
+
+.search {
+    height: 12%;
+    background-color: yellow;
+}
+
+.contacts {
+    height: 60%;
+    background-color: green;
+}
+
+
+
+
+/* sezioni chat sx */
+
+.activeUser {
+   height: 13%;
+}
+
+.activeChat {
+    height: 75%;
+    background-image: url("../img/mine.jpg");
+}
+
+
+.activeFooter {
+    height: 12%; 
+}
+
+/* end sezioni chat sx */
