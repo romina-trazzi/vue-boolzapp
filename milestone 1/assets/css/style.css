@@ -226,7 +226,7 @@ a:link {
     margin-left: 20px;
 }
 
-input[placeholder] {
+.startchat input[placeholder] {
     width: 100%;
     font-size: 17px;
     font-family: "Tahoma", "Geneva", "Verdana", "sans-serif";
@@ -326,3 +326,31 @@ input[placeholder] {
 }
 
 /* end sotto-sottosezione iconeAttive activePerson chat dx */
+
+/*=====================================================
+=            Sezioni activeFooter (chat dx)            =
+======================================================*/
+
+.footer {
+   width: 100%;
+}
+
+.footer i {
+    font-size: 2em;
+    color: rgb(107, 115, 118);
+    
+}
+
+#newChat {
+    width: 80%;
+    height: 70%;
+    border-radius: 10px;
+}
+
+.footer input[placeholder] {
+    width: 100%;
+    font-size: 20px;
+    font-family: "Tahoma", "Geneva", "Verdana", "sans-serif";
+    border: 0;
+    padding-left: 20px;
+}
