@@ -49,6 +49,10 @@ body {
 
 /* Classi utility */
 
+.d_flex {
+    display: flex;
+}
+
 .d_flex-start {
     display: flex;
     justify-content: start;
@@ -67,8 +71,17 @@ body {
     align-items: center;
 }
 
+.font {
+    font-size: 24px;
+    font-family: "Tahoma", "Geneva", "Verdana", "sans-serif";
+}
+
 .grey {
     background-color: rgb(234, 234, 234);
+}
+
+.white {
+    background-color: white;
 }
 
 /* end classi utility */
@@ -90,12 +103,12 @@ body {
 }
 
 .search {
-    height: 12%;
+    height: 10%;
     background-color: rgb(250, 250, 250);
 }
 
 .contacts {
-    height: 61%;
+    height: 63%;
     background-color: white;
 }
 
@@ -115,7 +128,7 @@ body {
     clear: both;
 }
 
-.nomeUtente {
+.nomedellUtente {
     height: 100%;
     width: 65%;
     float: left;
@@ -125,11 +138,6 @@ body {
     height: 70%;
     border-radius: 50%;
     margin-left: 10px;
-}
-
-#me {
-    font-size: 24px;
-    font-family: "Tahoma", "Geneva", "Verdana", "sans-serif";
 }
 
 /* end sotto-sottosezione nomeUtente userName utenti dx */
@@ -146,16 +154,110 @@ body {
 .iconeMessaggi i {
     color: rgb(177, 177, 177);
     font-size: 2em;
+    margin-right: 30px;
 
 }
 
 /* end sotto-sottosezione iconeMessaggi userName utenti dx */
 
-
-
-
-
 /*=====  End of Sezioni userName (utenti dx)  ======*/
+
+
+/*=====================================================
+=            Sezioni news (utenti dx)            =
+======================================================*/
+
+/* sotto-sottosezione bell news utenti dx */
+
+a:link {
+    font-size: 20px;
+    color: rgb(79, 118, 133);
+}
+
+.bell {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.bell i {
+    font-size: 2em;
+    color: rgb(142, 218, 252);
+}
+
+/* end sotto-sottosezione bell news utenti dx */
+
+/* sotto-sottosezione notifiche news utenti dx */
+
+.notifiche {
+    flex-direction: column;
+    height: max-content;
+    margin-left: 20px;
+}
+
+.new-news {
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+
+/* end sotto-sottosezione notifiche news utenti dx */
+
+
+/*=====================================================
+=            Sezioni search (utenti dx)            =
+======================================================*/
+
+.startchat {
+    width: 90%;
+    height: 80%;
+}
+
+.startchat i {
+    color: rgb(177, 177, 177);
+    font-size: 1.5em;
+    margin-right: 30px;
+    margin-left: 20px;
+}
+
+input[placeholder] {
+    width: 100%;
+    font-size: 17px;
+    font-family: "Tahoma", "Geneva", "Verdana", "sans-serif";
+    border: 0;
+}
+
+/*=====================================================
+=            Sezioni contacts (utenti dx)            =
+======================================================*/
+
+.contacts {
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.user {
+    width: 100%;
+    height: 130px;
+    border-bottom: 2px solid rgb(250, 250, 250);
+    margin-left: 20px;
+}
+
+.aligncenter {
+    align-items: center;
+}
+
+.utente {
+    height: 70%;
+    border-radius: 50%;
+    align-self: center;
+}
+
+.nomeUtente {
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+
 
 
 
@@ -166,7 +268,7 @@ body {
     =           Sezioni CHAT SX          =
 =============================================*/
 
-.activeUser {
+.activePerson {
    height: 12%;
 }
 

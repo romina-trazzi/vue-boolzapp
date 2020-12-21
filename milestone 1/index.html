@@ -34,9 +34,9 @@
                         
                         <!-- div username -->
                         <div class="userName grey ">
-                            <div class="nomeUtente d_flex-start">
+                            <div class="nomedellUtente d_flex-start">
                                 <img src ="assets/img/avatar_io.jpg" class ="io" alt ="img_io">
-                                <span id ="me">Nome Utente</span>
+                                <span id ="me" class="font">Nome Utente</span>
                             </div>
 
                             <div class="iconeMessaggi d_flex-spacearound">
@@ -44,27 +44,64 @@
                                 <i class="fas fa-comment-alt"></i>
                                 <i class="fas fa-ellipsis-v"></i>
                             </div>
-
                         </div>
                         <!-- / div username -->
-                        
-                        <div class="news"></div>
 
-                        <div class="search"></div>
+                        <!-- div news -->
+                        <div class="news d_flex-center">
 
-                        <div class="contacts">
-                            <div class="user"></div>
-                            <div class="user"></div>
-                            <div class="user"></div>
-                            <div class="user"></div>
+                                <div class="white bell d_flex-center">
+                                    <i class="fas fa-bell-slash"></i>
+                                </div>
+
+                                <div class="notifiche d_flex">
+                                    <p class="font new-news">Ricevi notifiche di nuovi messaggi</p>
+                                    <a href="http://" class="font">Attiva notifiche desktop</a>
+                                </div>
+                            
                         </div>
+                        <!-- div news -->
+
+                        <!-- div search -->
+                        <div class="search d_flex-center">
+                            <div class="white startchat d_flex-start">
+                                <i class="fas fa-search"></i>
+                                <input type ="text" placeholder="Cerca o inizia una nuova chat" id ="newchat">
+                            </div>
+                        </div>
+                        <!-- / div search -->
+
+                        <!-- div contacts -->
+                        <div class="contacts">
+                            <div class="user white d_flex">
+                                <img src="assets/img/avatar_1.jpg" alt="" class="utente">
+                                <p class ="nomeUtente font">Michele</p>
+                            </div>
+                            <div class="user white d_flex">
+                                <img src="assets/img/avatar_2.jpg" alt="" class="utente">
+                                <p class ="nomeUtente font">Fabio</p>
+                            </div>
+                            <div class="user white d_flex">
+                                <img src="assets/img/avatar_3.jpg" alt="" class="utente">
+                                <p class ="nomeUtente font">Samuele</p>
+                            </div>
+                            <div class="user white d_flex">
+                                <img src="assets/img/avatar_6.jpg" alt="" class="utente">
+                                <p class ="nomeUtente font">Luisa</p>
+                            </div>
+                            <div class="user white d_flex">
+                                <img src="assets/img/avatar_io.jpg" alt="" class="utente">
+                                <p class ="nomeUtente font">Romina</p>
+                            </div>
+                        </div>
+                        <!-- / div contacts -->
 
                     </section>
                     <!-- / sezione utenti sx -->
 
                     <!-- sezione chat dx -->
                     <section id ="dx">
-                        <div class="activeUser grey">
+                        <div class="activePerson grey">
                             
                         </div>
                         <div class="activeChat">
