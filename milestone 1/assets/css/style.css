@@ -47,6 +47,7 @@ body {
     float: left;
 }
 
+
 /* Classi utility */
 
 .d_flex {
@@ -71,6 +72,12 @@ body {
     align-items: center;
 }
 
+.d_flex-spaceevenly {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
 .font {
     font-size: 24px;
     font-family: "Tahoma", "Geneva", "Verdana", "sans-serif";
@@ -89,7 +96,7 @@ body {
 
 
 /*=============================================
-    =           Sezioni UTENTI DX          =
+    =           Sezioni UTENTI SX          =
 =============================================*/
 
 .userName {
@@ -112,15 +119,15 @@ body {
     background-color: white;
 }
 
-/*=====  End of Sezioni UTENTI DX  ======*/
+/*=====  End of Sezioni UTENTI SX  ======*/
 
 
 
 /*=====================================================
-=            Sezioni userName (utenti dx)            =
+=            Sezioni userName (utenti sx)            =
 ======================================================*/
 
-/* sotto-sottosezione nomeUtente userName utenti dx */
+/* sotto-sottosezione nomeUtente userName utenti sx */
 
 .userName::after {
     content: "";
@@ -140,10 +147,10 @@ body {
     margin-left: 10px;
 }
 
-/* end sotto-sottosezione nomeUtente userName utenti dx */
+/* end sotto-sottosezione nomeUtente userName utenti sx */
 
 
-/* sotto-sottosezione iconeMessaggi userName utenti dx */
+/* sotto-sottosezione iconeMessaggi userName utenti sx */
 
 .iconeMessaggi {
     height: 100%;
@@ -158,16 +165,16 @@ body {
 
 }
 
-/* end sotto-sottosezione iconeMessaggi userName utenti dx */
+/* end sotto-sottosezione iconeMessaggi userName utenti sx */
 
-/*=====  End of Sezioni userName (utenti dx)  ======*/
+/*=====  End of Sezioni userName (utenti sx)  ======*/
 
 
 /*=====================================================
-=            Sezioni news (utenti dx)            =
+=            Sezioni news (utenti sx)            =
 ======================================================*/
 
-/* sotto-sottosezione bell news utenti dx */
+/* sotto-sottosezione bell news utenti sx */
 
 a:link {
     font-size: 20px;
@@ -185,9 +192,9 @@ a:link {
     color: rgb(142, 218, 252);
 }
 
-/* end sotto-sottosezione bell news utenti dx */
+/* end sotto-sottosezione bell news utenti sx */
 
-/* sotto-sottosezione notifiche news utenti dx */
+/* sotto-sottosezione notifiche news utenti sx */
 
 .notifiche {
     flex-direction: column;
@@ -200,11 +207,11 @@ a:link {
     margin-bottom: 5px;
 }
 
-/* end sotto-sottosezione notifiche news utenti dx */
+/* end sotto-sottosezione notifiche news utenti sx */
 
 
 /*=====================================================
-=            Sezioni search (utenti dx)            =
+=            Sezioni search (utenti sx)            =
 ======================================================*/
 
 .startchat {
@@ -227,7 +234,7 @@ input[placeholder] {
 }
 
 /*=====================================================
-=            Sezioni contacts (utenti dx)            =
+=            Sezioni contacts (utenti sx)            =
 ======================================================*/
 
 .contacts {
@@ -237,7 +244,7 @@ input[placeholder] {
 
 .user {
     width: 100%;
-    height: 130px;
+    height: calc(100% / 4);
     border-bottom: 2px solid rgb(250, 250, 250);
     margin-left: 20px;
 }
@@ -259,14 +266,12 @@ input[placeholder] {
 
 
 
+/*----------  Fine sezioni di sinistra  ----------*/
 
 
-
-
-
-/*=============================================
-    =           Sezioni CHAT SX          =
-=============================================*/
+/*===========================================
+    =           Sezioni CHAT DX          =
+============================================*/
 
 .activePerson {
    height: 12%;
@@ -281,4 +286,43 @@ input[placeholder] {
     height: 13%; 
 }
 
-/*=====  End of Sezioni CHAT SX  ======*/
+/*=====  End of Sezioni CHAT DX  ======*/
+
+/*=====================================================
+=            Sezioni activePerson (chat dx)            =
+======================================================*/
+
+/* sotto-sottosezione barraUtenteAttivo activePerson chat dx */
+
+.barraUtenteAttivo {
+    height: 100%;
+    width: 80%;
+    float: left;
+}
+
+
+.lastLogin {
+    font-size: 20px;
+    color: rgb(107, 115, 118);
+    margin-top: 5px;
+    
+}
+
+/* end sotto-sottosezione barraUtenteAttivo activePerson chat dx */
+
+/* sotto-sottosezione iconeAttive activePerson chat dx */
+
+.iconeAttive {
+    height: 100%;
+    width: 20%;
+    float: left;
+}
+
+.iconeAttive i {
+    color: rgb(177, 177, 177);
+    font-size: 2em;
+    margin-right: 30px;
+
+}
+
+/* end sotto-sottosezione iconeAttive activePerson chat dx */

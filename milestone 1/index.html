@@ -33,7 +33,7 @@
                     <section id = "sx">
                         
                         <!-- div username -->
-                        <div class="userName grey ">
+                        <div class="userName grey">
                             <div class="nomedellUtente d_flex-start">
                                 <img src ="assets/img/avatar_io.jpg" class ="io" alt ="img_io">
                                 <span id ="me" class="font">Nome Utente</span>
@@ -101,14 +101,31 @@
 
                     <!-- sezione chat dx -->
                     <section id ="dx">
-                        <div class="activePerson grey">
+                        <div class="activePerson grey d_flex-spacearound">
+                            <div class="barraUtenteAttivo d_flex-start">
+                                <img src="assets/img/avatar_1.jpg" alt="" class="io">
+                                <p class ="io utenteAttivo font">Michele</p>
+                            </div>
                             
+                            <p class ="lastLogin font"> Ultimo accesso oggi alle </p>                              
+                           
+                           
+                            <div class="iconeAttive d_flex-spaceevenly">
+                                <i class="fas fa-search"></i>
+                                <i class="fas fa-paperclip"></i>
+                                <i class="fas fa-ellipsis-v"></i>
+                            </div>
                         </div>
+
                         <div class="activeChat">
 
                         </div>
                         <div class="activeFooter grey">
-                            <div class="input"></div>
+                             <div class="startchat d_flex-spacearound">
+                                <i class="fas fa-smile"></i>
+                                <input type ="text" placeholder="Scrivi un messaggio" id ="newchat" class="white">
+                                <i class="fas fa-microphone"></i>
+                            </div>
                         </div>
 
                     </section>
