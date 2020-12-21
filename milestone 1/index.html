@@ -30,16 +30,16 @@
                 <div class="container">
                     
                     <!-- sezione user sx -->
-                    <section id = "sx">
+                    <section id = "user_sx">
                         
                         <!-- div username -->
-                        <div class="userName grey">
-                            <div class="nomedellUtente d_flex-start">
-                                <img src ="assets/img/avatar_io.jpg" class ="io" alt ="img_io">
-                                <span id ="me" class="font">Nome Utente</span>
+                        <div class="username grey">
+                            <div class="nome_utente d_flex-start">
+                                <img src ="assets/img/avatar_io.jpg" class ="me" alt ="img_io">
+                                <span class="font">Nome Utente</span>
                             </div>
 
-                            <div class="iconeMessaggi d_flex-spacearound">
+                            <div class="icons_messages d_flex-spacearound">
                                 <i class="fas fa-circle-notch"></i>
                                 <i class="fas fa-comment-alt"></i>
                                 <i class="fas fa-ellipsis-v"></i>
@@ -54,8 +54,8 @@
                                     <i class="fas fa-bell-slash"></i>
                                 </div>
 
-                                <div class="notifiche d_flex">
-                                    <p class="font new-news">Ricevi notifiche di nuovi messaggi</p>
+                                <div class="notification d_flex">
+                                    <p class="font new_messages">Ricevi notifiche di nuovi messaggi</p>
                                     <a href="http://" class="font">Attiva notifiche desktop</a>
                                 </div>
                             
@@ -64,9 +64,9 @@
 
                         <!-- div search -->
                         <div class="search d_flex-center">
-                            <div class="white startchat d_flex-start">
+                            <div class="white search_chat d_flex-start">
                                 <i class="fas fa-search"></i>
-                                <input type ="text" placeholder="Cerca o inizia una nuova chat" id ="newchat">
+                                <input type ="text" placeholder="Cerca o inizia una nuova chat">
                             </div>
                         </div>
                         <!-- / div search -->
@@ -74,24 +74,24 @@
                         <!-- div contacts -->
                         <div class="contacts">
                             <div class="user white d_flex">
-                                <img src="assets/img/avatar_1.jpg" alt="" class="utente">
-                                <p class ="nomeUtente font">Michele</p>
+                                <img src="assets/img/avatar_1.jpg" alt="" class="avatar">
+                                <p class ="contact_name font">Michele</p>
                             </div>
                             <div class="user white d_flex">
-                                <img src="assets/img/avatar_2.jpg" alt="" class="utente">
-                                <p class ="nomeUtente font">Fabio</p>
+                                <img src="assets/img/avatar_2.jpg" alt="" class="avatar">
+                                <p class ="contact_name font">Fabio</p>
                             </div>
                             <div class="user white d_flex">
-                                <img src="assets/img/avatar_3.jpg" alt="" class="utente">
-                                <p class ="nomeUtente font">Samuele</p>
+                                <img src="assets/img/avatar_3.jpg" alt="" class="avatar">
+                                <p class ="contact_name font">Samuele</p>
                             </div>
                             <div class="user white d_flex">
-                                <img src="assets/img/avatar_6.jpg" alt="" class="utente">
-                                <p class ="nomeUtente font">Luisa</p>
+                                <img src="assets/img/avatar_6.jpg" alt="" class="avatar">
+                                <p class ="contact_name font">Luisa</p>
                             </div>
                             <div class="user white d_flex">
-                                <img src="assets/img/avatar_io.jpg" alt="" class="utente">
-                                <p class ="nomeUtente font">Romina</p>
+                                <img src="assets/img/avatar_io.jpg" alt="" class="avatar">
+                                <p class ="contact_name font">Romina</p>
                             </div>
                         </div>
                         <!-- / div contacts -->
@@ -100,17 +100,20 @@
                     <!-- / sezione utenti sx -->
 
                     <!-- sezione chat dx -->
-                    <section id ="dx">
+                    <section id ="chat_dx">
                         <div class="activePerson grey d_flex-spacearound">
-                            <div class="barraUtenteAttivo d_flex-start">
-                                <img src="assets/img/avatar_1.jpg" alt="" class="io">
-                                <p class ="io utenteAttivo font">Michele</p>
+                            <div class="active_user_bar d_flex-start">
+                                <img src="assets/img/avatar_1.jpg" alt="" class="me">
+                                <span class ="me font d_flex aligncenter"> 
+                                    <p>Michele</p>
+                                    <p class ="last_login font"> Ultimo accesso oggi alle </p> 
+                                </span>
                             </div>
                             
-                            <p class ="lastLogin font"> Ultimo accesso oggi alle </p>                              
+                                                         
                            
                            
-                            <div class="iconeAttive d_flex-spaceevenly">
+                            <div class="active_icons d_flex-spaceevenly">
                                 <i class="fas fa-search"></i>
                                 <i class="fas fa-paperclip"></i>
                                 <i class="fas fa-ellipsis-v"></i>
@@ -121,9 +124,9 @@
 
                         </div>
                         <div class="activeFooter grey d_flex">
-                            <div class="footer d_flex-spaceevenly">
+                            <div class="write_bar d_flex-spaceevenly">
                                 <i class="far fa-smile"></i>
-                                <input type ="text" placeholder="Scrivi un messaggio" id ="newChat" class="white">
+                                <input type ="text" placeholder="Scrivi un messaggio" id ="new_chat" class="white">
                                 <i class="fas fa-microphone"></i>
                             </div>
                         </div>

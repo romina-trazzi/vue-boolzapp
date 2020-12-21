@@ -34,14 +34,14 @@ body {
     clear: both;
 }
 
-#sx {
+#user_sx {
     width: 40%;
     height: 100%;
     background-color: white;
     float: left;
 }
 
-#dx {
+#chat_dx {
     width: 60%;
     height: 100%;
     float: left;
@@ -96,12 +96,12 @@ body {
 
 
 /*=============================================
-    =           Sezioni UTENTI SX          =
+    =           Sezioni USER SX          =
 =============================================*/
 
-.userName {
+.username {
     height: 12%;
-    border-right: 1px solid rgb(214,214,214);
+    border-right: 1px solid rgb(214, 214, 214);
 }
 
 .news {
@@ -124,57 +124,57 @@ body {
 
 
 /*=====================================================
-=            Sezioni userName (utenti sx)            =
+=            Sezioni username (user sx)            =
 ======================================================*/
 
-/* sotto-sottosezione nomeUtente userName utenti sx */
+/* sotto-sottosezione nome_utente username user sx */
 
-.userName::after {
+.username::after {
     content: "";
     display: table;
     clear: both;
 }
 
-.nomedellUtente {
+.nome_utente {
     height: 100%;
     width: 65%;
     float: left;
 }
 
-.io {
+.me {
     height: 70%;
     border-radius: 50%;
     margin-left: 10px;
 }
 
-/* end sotto-sottosezione nomeUtente userName utenti sx */
+/* end sotto-sottosezione nome_utente username user sx */
 
 
-/* sotto-sottosezione iconeMessaggi userName utenti sx */
+/* sotto-sottosezione icons_messages username user sx */
 
-.iconeMessaggi {
+.icons_messages {
     height: 100%;
     width: 35%;
     float: left;
 }
 
-.iconeMessaggi i {
+.icons_messages i {
     color: rgb(177, 177, 177);
     font-size: 2em;
     margin-right: 30px;
 
 }
 
-/* end sotto-sottosezione iconeMessaggi userName utenti sx */
+/* end sotto-sottosezione icons_messagges username user sx */
 
-/*=====  End of Sezioni userName (utenti sx)  ======*/
+/*=====  End of Sezioni username (user sx)  ======*/
 
 
 /*=====================================================
-=            Sezioni news (utenti sx)            =
+=            Sezioni news (user sx)            =
 ======================================================*/
 
-/* sotto-sottosezione bell news utenti sx */
+/* sotto-sottosezione bell news user sx */
 
 a:link {
     font-size: 20px;
@@ -192,41 +192,41 @@ a:link {
     color: rgb(142, 218, 252);
 }
 
-/* end sotto-sottosezione bell news utenti sx */
+/* end sotto-sottosezione bell news user sx */
 
-/* sotto-sottosezione notifiche news utenti sx */
+/* sotto-sottosezione notification news user sx */
 
-.notifiche {
+.notification {
     flex-direction: column;
     height: max-content;
     margin-left: 20px;
 }
 
-.new-news {
+.new_messages {
     letter-spacing: 1px;
     margin-bottom: 5px;
 }
 
-/* end sotto-sottosezione notifiche news utenti sx */
+/* end sotto-sottosezione notification news user sx */
 
 
 /*=====================================================
-=            Sezioni search (utenti sx)            =
+=            Sezioni search (user sx)            =
 ======================================================*/
 
-.startchat {
+.search_chat {
     width: 90%;
     height: 80%;
 }
 
-.startchat i {
+.search_chat i {
     color: rgb(177, 177, 177);
     font-size: 1.5em;
     margin-right: 30px;
     margin-left: 20px;
 }
 
-.startchat input[placeholder] {
+.search_chat input[placeholder] {
     width: 100%;
     font-size: 17px;
     font-family: "Tahoma", "Geneva", "Verdana", "sans-serif";
@@ -234,7 +234,7 @@ a:link {
 }
 
 /*=====================================================
-=            Sezioni contacts (utenti sx)            =
+=            Sezioni contacts (user sx)            =
 ======================================================*/
 
 .contacts {
@@ -249,17 +249,13 @@ a:link {
     margin-left: 20px;
 }
 
-.aligncenter {
-    align-items: center;
-}
-
-.utente {
+.avatar {
     height: 70%;
     border-radius: 50%;
     align-self: center;
 }
 
-.nomeUtente {
+.contact_name {
     margin-top: 20px;
     margin-left: 10px;
 }
@@ -274,7 +270,7 @@ a:link {
 ============================================*/
 
 .activePerson {
-   height: 12%;
+    height: 12%;
 }
 
 .activeChat {
@@ -283,7 +279,7 @@ a:link {
 }
 
 .activeFooter {
-    height: 13%; 
+    height: 13%;
 }
 
 /*=====  End of Sezioni CHAT DX  ======*/
@@ -294,35 +290,40 @@ a:link {
 
 /* sotto-sottosezione barraUtenteAttivo activePerson chat dx */
 
-.barraUtenteAttivo {
+.active_user_bar {
     height: 100%;
     width: 80%;
-    float: left;
 }
 
 
-.lastLogin {
+.last_login {
     font-size: 20px;
     color: rgb(107, 115, 118);
     margin-top: 5px;
-    
+
 }
 
 /* end sotto-sottosezione barraUtenteAttivo activePerson chat dx */
 
+
 /* sotto-sottosezione iconeAttive activePerson chat dx */
 
-.iconeAttive {
+
+.active_icons {
     height: 100%;
     width: 20%;
     float: left;
 }
 
-.iconeAttive i {
+.active_icons i {
     color: rgb(177, 177, 177);
     font-size: 2em;
     margin-right: 30px;
+}
 
+
+.aligncenter {
+    flex-direction: column;
 }
 
 /* end sotto-sottosezione iconeAttive activePerson chat dx */
@@ -331,26 +332,26 @@ a:link {
 =            Sezioni activeFooter (chat dx)            =
 ======================================================*/
 
-.footer {
-   width: 100%;
+.write_bar {
+    width: 100%;
 }
 
-.footer i {
+.write_bar i {
     font-size: 2em;
     color: rgb(107, 115, 118);
-    
+
 }
 
-#newChat {
-    width: 80%;
-    height: 70%;
-    border-radius: 10px;
-}
-
-.footer input[placeholder] {
+.write_bar input[placeholder] {
     width: 100%;
     font-size: 20px;
     font-family: "Tahoma", "Geneva", "Verdana", "sans-serif";
     border: 0;
     padding-left: 20px;
+}
+
+#new_chat {
+    width: 80%;
+    height: 70%;
+    border-radius: 10px;
 }
