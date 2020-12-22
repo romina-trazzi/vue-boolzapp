@@ -1,0 +1,431 @@
+/* Boolzapp - a (not very) innovative messagingplatform
+Milestone 1
+Replica della grafica ​
+con la possibilità di avere messaggi scritti dall’utente (verdi) 
+e dall’interlocutore (bianco) assegnando due classi CSS diverse */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(219, 219, 210);
+    overflow-y: hidden;
+}
+
+#marine {
+    height: 130px;
+    background-color: rgb(0, 150, 138);
+}
+
+.container {
+    width: 1430px;
+    height: 850px;
+    position: relative;
+    top: -100px;
+
+}
+
+.container::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#user_sx {
+    width: 40%;
+    height: 100%;
+    background-color: white;
+    float: left;
+}
+
+#chat_dx {
+    width: 60%;
+    height: 100%;
+    float: left;
+}
+
+
+/* Classi utility */
+
+.d_flex {
+    display: flex;
+}
+
+.d_flex-start {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.d_flex-end {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.d_flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.d_flex-spacearound {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.d_flex-spaceevenly {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.font {
+    font-size: 24px;
+    font-family: "Tahoma", "Geneva", "Verdana", "sans-serif";
+}
+
+.grey {
+    background-color: rgb(234, 234, 234);
+}
+
+.white {
+    background-color: white;
+}
+
+/* end classi utility */
+
+
+
+/*=============================================
+    =           Sezioni USER SX          =
+=============================================*/
+
+.username {
+    height: 12%;
+    border-right: 1px solid rgb(214, 214, 214);
+}
+
+.news {
+    height: 15%;
+    background-color: rgb(142, 218, 252);
+}
+
+.search {
+    height: 10%;
+    background-color: rgb(250, 250, 250);
+}
+
+.contacts {
+    height: 63%;
+    background-color: white;
+}
+
+/*=====  End of Sezioni UTENTI SX  ======*/
+
+
+
+/*=====================================================
+=            Sezioni username (user sx)            =
+======================================================*/
+
+/* sotto-sottosezione nome_utente username user sx */
+
+.username::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.nome_utente {
+    height: 100%;
+    width: 65%;
+    float: left;
+}
+
+.me {
+    height: 70%;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+/* end sotto-sottosezione nome_utente username user sx */
+
+
+/* sotto-sottosezione icons_messages username user sx */
+
+.icons_messages {
+    height: 100%;
+    width: 35%;
+    float: left;
+}
+
+.icons_messages i {
+    color: rgb(177, 177, 177);
+    font-size: 2em;
+    margin-right: 30px;
+
+}
+
+/* end sotto-sottosezione icons_messagges username user sx */
+
+/*=====  End of Sezioni username (user sx)  ======*/
+
+
+/*=====================================================
+=            Sezioni news (user sx)            =
+======================================================*/
+
+/* sotto-sottosezione bell news user sx */
+
+a:link {
+    font-size: 20px;
+    color: rgb(79, 118, 133);
+}
+
+.bell {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.bell i {
+    font-size: 2em;
+    color: rgb(142, 218, 252);
+}
+
+/* end sotto-sottosezione bell news user sx */
+
+/* sotto-sottosezione notification news user sx */
+
+.notification {
+    flex-direction: column;
+    height: max-content;
+    margin-left: 20px;
+}
+
+.new_messages {
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+
+/* end sotto-sottosezione notification news user sx */
+
+
+/*=====  End of Sezioni news (user sx)  ======*/
+
+
+/*=====================================================
+=            Sezioni search (user sx)            =
+======================================================*/
+
+.search_chat {
+    width: 90%;
+    height: 80%;
+}
+
+.search_chat i {
+    color: rgb(177, 177, 177);
+    font-size: 1.5em;
+    margin-right: 30px;
+    margin-left: 20px;
+}
+
+.search_chat input[placeholder] {
+    width: 100%;
+    font-size: 17px;
+    font-family: "Tahoma", "Geneva", "Verdana", "sans-serif";
+    border: 0;
+}
+
+
+/*=====  End of Sezioni search (user sx)  ======*/
+
+
+/*=====================================================
+=            Sezioni contacts (user sx)            =
+======================================================*/
+
+.contacts {
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.contacts p {
+    cursor: pointer;
+}
+
+.user {
+    width: 100%;
+    height: calc(100% / 4);
+    border-bottom: 2px solid rgb(250, 250, 250);
+    margin-left: 20px;
+    
+}
+
+.user:hover {
+    background-color: rgb(240, 240, 240);
+}
+
+.avatar {
+    height: 80px;
+    border-radius: 50%;
+    align-self: center;
+}
+
+.contact_name {
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+/*=====  End of Sezioni contacts (user sx)  ======*/
+
+
+/*----------  Fine sezioni di sinistra  ----------*/
+
+
+/*===========================================
+    =           Sezioni CHAT DX          =
+============================================*/
+
+.activePerson {
+    height: 12%;
+}
+
+.activeChat {
+    height: 75%;
+    background-image: url("../img/mine.jpg");
+}
+
+.activeFooter {
+    height: 13%;
+}
+
+/*=====  End of Sezioni CHAT DX  ======*/
+
+/*=====================================================
+=            Sezioni activePerson (chat dx)            =
+======================================================*/
+
+/* sotto-sottosezione active_uster_bar activePerson chat dx */
+
+
+.active_user_bar {
+    height: 100%;
+    width: 80%;
+}
+
+
+.last_login {
+    font-size: 20px;
+    color: rgb(107, 115, 118);
+    margin-top: 5px;
+
+}
+
+.aligncenter {
+    flex-direction: column;
+}
+
+/* end sotto-sottosezione active_user_bar activePerson chat dx */
+
+
+/* sotto-sottosezione active_icons activePerson chat dx */
+
+
+.active_icons {
+    height: 100%;
+    width: 20%;
+    float: left;
+}
+
+.active_icons i {
+    color: rgb(177, 177, 177);
+    font-size: 2em;
+    margin-right: 30px;
+}
+
+/* end sotto-sottosezione active_icons activePerson chat dx */
+
+
+/*=====  End of Sezioni activePerson (chat dx)  ======*/
+
+/*=====================================================
+=            Sezioni activeChat (chat dx)            =
+======================================================*/
+
+.activeChat {
+    overflow-y: scroll;
+}
+
+.received p {
+    background-color: rgb(200, 234, 174);
+}
+
+
+.sent p {
+    background-color: white;
+}
+
+.received p .sent p {
+    padding: 20px;
+    width: max-content;
+    height: max-content;
+    border-radius: 10px;
+    margin: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.received, .sent {
+    flex-direction: column;
+    font-size: 18px;
+}
+
+.received {
+    align-items: end;
+  
+}
+
+.sent {
+     align-items: start;
+ }
+
+
+/*=====  End of Sezioni activeChat (chat dx)  ======*/
+
+/*=====================================================
+=            Sezioni activeFooter (chat dx)            =
+======================================================*/
+
+.write_bar {
+    width: 100%;
+}
+
+.write_bar i {
+    font-size: 2em;
+    color: rgb(107, 115, 118);
+
+}
+
+.write_bar input[placeholder] {
+    width: 100%;
+    font-size: 20px;
+    font-family: "Tahoma", "Geneva", "Verdana", "sans-serif";
+    border: 0;
+    padding-left: 20px;
+}
+
+#new_chat {
+    width: 80%;
+    height: 70%;
+    border-radius: 10px;
+}
+
+/*=====  End of Sezioni activeFooter (chat dx)  ======*/
