@@ -72,7 +72,7 @@ var boolzapp = new Vue({
         text: 'Si, ma preferirei andare al cinema',
         status: 'received'
       }]
-    }]
-  },
-  methods: {}
+    }],
+    utenteAttivo: 0
+  }
 });

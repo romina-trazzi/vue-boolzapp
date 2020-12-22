@@ -260,14 +260,16 @@ a:link {
     height: calc(100% / 4);
     border-bottom: 2px solid rgb(250, 250, 250);
     margin-left: 20px;
+    
 }
 
 .user:hover {
     background-color: rgb(240, 240, 240);
+    cursor: pointer; 
 }
 
 .avatar {
-    height: 70%;
+    height: 80px;
     border-radius: 50%;
     align-self: center;
 }
@@ -360,6 +362,7 @@ a:link {
 .received p {
     background-color: rgb(200, 234, 174);
 }
+
 
 .sent p {
     background-color: white;

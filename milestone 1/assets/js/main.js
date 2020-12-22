@@ -106,12 +106,11 @@ var boolzapp = new Vue({
                     }
                 ],
             },
-        ]
+        ],
+
+        utenteAttivo: 0
+
     }, 
-
-
-    methods: {
-        
-    }
 })
+
 

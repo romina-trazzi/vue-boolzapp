@@ -73,27 +73,10 @@
 
                         <!-- div contacts -->
                         <div class="contacts">
-                            <div class="user white d_flex">
-                                <img src="assets/img/avatar_1.jpg" alt="" class="avatar">
-                                <p class ="contact_name font">Michele</p>
+                            <div v-for="contact in contacts" class="user white d_flex"> 
+                                <img v-bind:src=" './assets/img/avatar' + contact.avatar +  '.jpg ' " alt="" class="avatar"> 
+                                <p class ="contact_name font">  {{ contact.name }} </p>
                             </div>
-                            <div class="user white d_flex">
-                                <img src="assets/img/avatar_2.jpg" alt="" class="avatar">
-                                <p class ="contact_name font">Fabio</p>
-                            </div>
-                            <div class="user white d_flex">
-                                <img src="assets/img/avatar_3.jpg" alt="" class="avatar">
-                                <p class ="contact_name font">Samuele</p>
-                            </div>
-                            <div class="user white d_flex">
-                                <img src="assets/img/avatar_6.jpg" alt="" class="avatar">
-                                <p class ="contact_name font">Luisa</p>
-                            </div>
-                            <div class="user white d_flex">
-                                <img src="assets/img/avatar_io.jpg" alt="" class="avatar">
-                                <p class ="contact_name font">Romina</p>
-                            </div>
-                        </div>
                         <!-- / div contacts -->
 
                     </section>
@@ -120,6 +103,7 @@
                         </div>
                         <!-- / div activePerson -->
 
+                        <!-- div activeChat -->
                         <div class="activeChat font">
                             <div class="received d_flex">
                                 <p></p>
@@ -131,6 +115,7 @@
                             </div>
 
                         </div>
+                        <!-- / div activeChat -->
 
                         <!-- div activeFooter -->
                         <div class="activeFooter grey d_flex">
