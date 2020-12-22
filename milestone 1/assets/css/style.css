@@ -60,6 +60,12 @@ body {
     align-items: center;
 }
 
+.d_flex-end {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
 .d_flex-center {
     display: flex;
     justify-content: center;
@@ -210,6 +216,9 @@ a:link {
 /* end sotto-sottosezione notification news user sx */
 
 
+/*=====  End of Sezioni news (user sx)  ======*/
+
+
 /*=====================================================
 =            Sezioni search (user sx)            =
 ======================================================*/
@@ -232,6 +241,10 @@ a:link {
     font-family: "Tahoma", "Geneva", "Verdana", "sans-serif";
     border: 0;
 }
+
+
+/*=====  End of Sezioni search (user sx)  ======*/
+
 
 /*=====================================================
 =            Sezioni contacts (user sx)            =
@@ -260,6 +273,7 @@ a:link {
     margin-left: 10px;
 }
 
+/*=====  End of Sezioni contacts (user sx)  ======*/
 
 
 /*----------  Fine sezioni di sinistra  ----------*/
@@ -288,7 +302,8 @@ a:link {
 =            Sezioni activePerson (chat dx)            =
 ======================================================*/
 
-/* sotto-sottosezione barraUtenteAttivo activePerson chat dx */
+/* sotto-sottosezione active_uster_bar activePerson chat dx */
+
 
 .active_user_bar {
     height: 100%;
@@ -303,10 +318,14 @@ a:link {
 
 }
 
-/* end sotto-sottosezione barraUtenteAttivo activePerson chat dx */
+.aligncenter {
+    flex-direction: column;
+}
+
+/* end sotto-sottosezione active_user_bar activePerson chat dx */
 
 
-/* sotto-sottosezione iconeAttive activePerson chat dx */
+/* sotto-sottosezione active_icons activePerson chat dx */
 
 
 .active_icons {
@@ -321,12 +340,51 @@ a:link {
     margin-right: 30px;
 }
 
+/* end sotto-sottosezione active_icons activePerson chat dx */
 
-.aligncenter {
-    flex-direction: column;
+
+/*=====  End of Sezioni activePerson (chat dx)  ======*/
+
+/*=====================================================
+=            Sezioni activeChat (chat dx)            =
+======================================================*/
+
+.activeChat {
+    overflow-y: scroll;
 }
 
-/* end sotto-sottosezione iconeAttive activePerson chat dx */
+.received p {
+    background-color: rgb(200, 234, 174);
+}
+
+.sent p {
+    background-color: white;
+}
+
+.received p, .sent p {
+    padding: 20px;
+    width: max-content;
+    height: max-content;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.received, .sent {
+    flex-direction: column;
+    font-size: 18px;
+}
+
+.received {
+    align-items: end;
+  
+}
+
+.sent {
+     align-items: start;
+ }
+
+
+/*=====  End of Sezioni activeChat (chat dx)  ======*/
 
 /*=====================================================
 =            Sezioni activeFooter (chat dx)            =
@@ -355,3 +413,5 @@ a:link {
     height: 70%;
     border-radius: 10px;
 }
+
+/*=====  End of Sezioni activeFooter (chat dx)  ======*/
