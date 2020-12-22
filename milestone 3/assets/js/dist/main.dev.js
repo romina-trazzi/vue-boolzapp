@@ -73,11 +73,22 @@ var boolzapp = new Vue({
         status: 'received'
       }]
     }],
+    nuovoMessaggio: '',
     utenteAttivo: 0
   },
   methods: {
     changeContact: function changeContact(index) {
       this.utenteAttivo = index;
+    },
+    printUserMsg: function printUserMsg() {
+      var messaggio = this.nuovoMessaggio;
+      var utente = this.contacts[this.utenteAttivo];
+      utente.messages.push({
+        date: moment().format('DD MM YYYY hh:mm:ss'),
+        text: messaggio,
+        status: 'sent'
+      });
+      this.nuovoMessaggio = '';
     }
   }
 });

@@ -108,6 +108,7 @@ var boolzapp = new Vue({
             },
         ],
 
+        nuovoMessaggio: '',
         utenteAttivo: 0
 
     }, 
@@ -117,7 +118,19 @@ var boolzapp = new Vue({
             this.utenteAttivo = index;
         },
 
-        
+        printUserMsg() {
+            let messaggio = this.nuovoMessaggio;
+            let utente = this.contacts[this.utenteAttivo];
+            utente.messages.push(
+                {
+                    date: moment().format('DD MM YYYY hh:mm:ss'),
+                    text: messaggio,
+                    status: 'sent'
+                }
+            );
+            this.nuovoMessaggio = '';
+
+        }
     }
 })
 

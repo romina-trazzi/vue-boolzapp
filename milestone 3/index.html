@@ -88,7 +88,7 @@
                         <!-- div activePerson -->
                         <div class="activePerson grey d_flex-spacearound">
                             <div class="active_user_bar d_flex-start">
-                                <img v-bind:src=" './assets/img/avatar' + contacts[utenteAttivo].avatar + '.jpg' " alt="" class="me">
+                                <img :src=" './assets/img/avatar' + contacts[utenteAttivo].avatar + '.jpg' " alt="" class="me">
                                 <div class ="me font d_flex aligncenter"> 
                                     <p> {{ contacts[utenteAttivo].name }}</p>
                                     <p class ="last_login font"> Ultimo accesso oggi alle </p> 
@@ -115,7 +115,7 @@
                         <div class="activeFooter grey d_flex">
                             <div class="write_bar d_flex-spaceevenly">
                                 <i class="far fa-smile"></i>
-                                <input class="white" id ="new_chat" placeholder="Scrivi un messaggio">
+                                <input class="white" id ="new_chat" placeholder="Scrivi un messaggio" @keyup.enter="printUserMsg" v-model="nuovoMessaggio">
                                 <i class="fas fa-microphone"></i>
                             </div>
                         </div>
