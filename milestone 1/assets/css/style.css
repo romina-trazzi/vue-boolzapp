@@ -262,6 +262,10 @@ a:link {
     margin-left: 20px;
 }
 
+.user:hover {
+    background-color: rgb(240, 240, 240);
+}
+
 .avatar {
     height: 70%;
     border-radius: 50%;
