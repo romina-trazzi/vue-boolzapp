@@ -123,12 +123,23 @@ var boolzapp = new Vue({
             let utente = this.contacts[this.utenteAttivo];
             utente.messages.push(
                 {
-                    date: moment().format('DD MM YYYY hh:mm:ss'),
+                    date: dayjs().format('DD/MM/YYYY hh:mm:ss'),
                     text: messaggio,
                     status: 'sent'
                 }
             );
             this.nuovoMessaggio = '';
+                
+            setTimeout(function () {
+                utente.messages.push(
+                    {
+                        date: dayjs().format('DD/MM/YYYY hh:mm:ss'),
+                        text: 'Ok',
+                        status: 'received'
+                    }
+                );
+            }, 3000);
+
 
         }
     }

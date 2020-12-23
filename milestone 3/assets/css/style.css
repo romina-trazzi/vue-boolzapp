@@ -21,7 +21,7 @@ body {
 }
 
 .container {
-    width: 1430px;
+    width: 1170px;
     height: 850px;
     position: relative;
     top: -100px;
@@ -209,7 +209,6 @@ a:link {
 }
 
 .new_messages {
-    letter-spacing: 1px;
     margin-bottom: 5px;
 }
 
@@ -392,6 +391,14 @@ a:link {
 .sent {
      align-items: start;
  }
+
+.date {
+    color: rgb(177, 177, 177) !important; 
+    font-size: 12px !important;
+ }
+
+ 
+ 
 
 
 /*=====  End of Sezioni activeChat (chat dx)  ======*/
